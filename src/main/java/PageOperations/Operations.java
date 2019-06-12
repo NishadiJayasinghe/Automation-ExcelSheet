@@ -5,8 +5,8 @@ import org.openqa.selenium.NoAlertPresentException;
 
 import Base.BaseTerms;
 import PageElements.Locators;
+import dataProvider.ExcelUtils;
 import io.qameta.allure.Step;
-import Base.ExcelUtils;
 
 public class Operations extends BaseTerms {
 	@Step("Initiate browser and excelsheet")
