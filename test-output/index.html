@@ -101,7 +101,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="PageTeastCases.TestCase" hash-for-method="TestProcedure">TestProcedure</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="PageTeastCases.TestCase" hash-for-method="TestProcedure(public void PageTeastCases.TestCase.TestProcedure(java.lang.reflect.Method) throws java.lang.Excepti...)">TestProcedure(public void PageTeastCases.TestCase.TestProcedure(java.lang.reflect.Method) throws java.lang.Excepti...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -124,9 +124,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TestProcedure">
-                  </a> <!-- TestProcedure -->
+                  <a name="TestProcedure(public void PageTeastCases.TestCase.TestProcedure(java.lang.reflect.Method) throws java.lang.Excepti...)">
+                  </a> <!-- TestProcedure(public void PageTeastCases.TestCase.TestProcedure(java.lang.reflect.Method) throws java.lang.Excepti...) -->
                   <span class="method-name">TestProcedure</span>
+                  <span class="parameters">(public void PageTeastCases.TestCase.TestProcedure(java.lang.reflect.Method) throws java.lang.Exception)</span>
                   <em>
 (login with correct credentials)                  </em>
                 </div> <!-- method-content -->
@@ -143,6 +144,10 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;Listeners.TestListener&quot;/&gt;
+    &lt;listener class-name=&quot;Listeners.AnnotationTransformer&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;PageTeastCases.TestCase&quot;/&gt;
@@ -189,12 +194,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TestProcedure')
 data.setCell(0, 2, 'PageTeastCases.TestCase')
-data.setCell(0, 3, 9238);
+data.setCell(0, 3, 8956);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -222,7 +227,7 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">PageTeastCases.TestCase</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">TestProcedure</span>
+                <span class="method-name">TestProcedure(public void PageTeastCases.TestCase.TestProcedure(java.lang.reflect.Method) throws java.lang.Excepti...)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
