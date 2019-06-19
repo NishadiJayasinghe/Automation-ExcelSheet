@@ -3,6 +3,8 @@ package Base;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
 import dataProvider.ConfigFileReader;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -25,4 +27,15 @@ public class BaseTerms extends ConfigFileReader{
     public static WebDriver getDriver() {
         return driver;
     }
+    
+    
+    public static void type(WebElement element, String value) {
+		  
+		  element.sendKeys(value);
+	  }
+	  
+	  public static void click(WebElement element) {
+		  
+		  element.click();
+	  }
 }

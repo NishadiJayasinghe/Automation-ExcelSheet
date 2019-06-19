@@ -18,18 +18,21 @@ public class Operations extends BaseTerms {
 	@Step("Input Username step....")
     public static void InputUserName() throws Exception {
         String sUserName = ExcelUtils.getCellData(1, 0);
-        Locators.UserName().sendKeys(sUserName);
+        type(Locators.UserName(), sUserName);
+        //Locators.UserName().sendKeys(sUserName);
     }
     
 	@Step("Input password step....")
     public static void InputPassword() throws Exception {
         String sPassword = ExcelUtils.getCellData(1, 1);
-        Locators.Password().sendKeys(sPassword);
+        type(Locators.Password(), sPassword);
+        //Locators.Password().sendKeys(sPassword);
     }
     
 	@Step("click on login button....")
     public static void ClickLogin() {
-        Locators.login().click();
+		click(Locators.login());
+        //Locators.login().click();
     }
     
 	@Step("verify login....")
