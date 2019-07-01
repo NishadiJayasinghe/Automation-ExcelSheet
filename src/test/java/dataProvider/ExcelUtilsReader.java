@@ -6,9 +6,8 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import Base.BaseTerms;
 
-public class ExcelUtils extends BaseTerms{
-
-    private static XSSFWorkbook ExcelWBook; 
+public class ExcelUtilsReader extends BaseTerms{
+private static XSSFWorkbook ExcelWBook; 
     
     private static XSSFSheet ExcelWSheet; 
     
@@ -45,6 +44,4 @@ public class ExcelUtils extends BaseTerms{
             return "";
         }
    }
-       
-   
 }          

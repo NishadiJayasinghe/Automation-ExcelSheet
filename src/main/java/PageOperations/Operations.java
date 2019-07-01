@@ -5,28 +5,28 @@ import org.openqa.selenium.NoAlertPresentException;
 
 import Base.BaseTerms;
 import PageElements.Locators;
-import dataProvider.ExcelUtils;
+import dataProvider.ExcelUtilsReader;
 import io.qameta.allure.Step;
 
 public class Operations extends BaseTerms {
 	@Step("Initiate browser and excelsheet")
 	public static void initiateWebdriver() throws Exception {
-        ExcelUtils.setExcelFile(getPropertyValue("Path_TestData") +getPropertyValue("File_TestData"),"Sheet1");
+       ExcelUtilsReader.setExcelFile(getPropertyValue("Path_TestData") +getPropertyValue("File_TestData"),"Sheet1");
         LaunchBrowser();
     }
     
 	@Step("Input Username step....")
     public static void InputUserName() throws Exception {
-        String sUserName = ExcelUtils.getCellData(1, 0);
-        type(Locators.UserName(), sUserName);
+       String sUserName = ExcelUtilsReader.getCellData(1,0);
+		type(Locators.UserName(), sUserName);
         //Locators.UserName().sendKeys(sUserName);
     }
     
 	@Step("Input password step....")
     public static void InputPassword() throws Exception {
-        String sPassword = ExcelUtils.getCellData(1, 1);
+        String sPassword = ExcelUtilsReader.getCellData(1, 1);
         type(Locators.Password(), sPassword);
-        //Locators.Password().sendKeys(sPassword);
+       // Locators.Password().sendKeys(sPassword);
     }
     
 	@Step("click on login button....")

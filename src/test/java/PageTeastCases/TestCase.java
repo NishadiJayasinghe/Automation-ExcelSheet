@@ -17,10 +17,12 @@ import io.qameta.allure.Story;
 @Epic("functional Tests")
 @Feature("Login Tests")
 public class TestCase extends Operations{
+	
+		
   @Test(description = "login with correct credentials")
   @Severity(SeverityLevel.NORMAL)
   @Description("Test Case Description : login with correct credentials")
-  @Story("Story Name : To check login Page")
+  @Story("Story Name : To check login Page") 
   public void TestProcedure(Method method) throws Exception {
 	  ExtentTestManager.startTest(method.getName(), "Invalid Login Scenario with empty username and password.");
 	  initiateWebdriver();
@@ -28,6 +30,7 @@ public class TestCase extends Operations{
 	  InputPassword();
 	  ClickLogin();
 	  veriifyLogin();
+	  getDriver().close();
 	  
   }
 }

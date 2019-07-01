@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9088" started-at="2019-06-12T11:07:20Z" finished-at="2019-06-12T11:07:29Z">
+  <suite name="Default suite" duration-ms="15519" started-at="2019-07-01T12:35:06Z" finished-at="2019-07-01T12:35:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9088" started-at="2019-06-12T11:07:20Z" finished-at="2019-06-12T11:07:29Z">
+    <test name="Default test" duration-ms="15519" started-at="2019-07-01T12:35:06Z" finished-at="2019-07-01T12:35:21Z">
       <class name="PageTeastCases.TestCase">
-        <test-method status="PASS" signature="TestProcedure(java.lang.reflect.Method)[pri:0, instance:PageTeastCases.TestCase@1dd02175]" name="TestProcedure" duration-ms="8956" started-at="2019-06-12T16:37:20Z" description="login with correct credentials" finished-at="2019-06-12T16:37:29Z">
+        <test-method status="PASS" signature="TestProcedure(java.lang.reflect.Method)[pri:0, instance:PageTeastCases.TestCase@23bb8443]" name="TestProcedure" duration-ms="15347" started-at="2019-07-01T18:05:06Z" description="login with correct credentials" finished-at="2019-07-01T18:05:21Z">
           <params>
             <param index="0">
               <value>
